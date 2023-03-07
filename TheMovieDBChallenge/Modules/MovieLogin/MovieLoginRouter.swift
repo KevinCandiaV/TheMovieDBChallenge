@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+protocol MovieLoginRouterProtocol {
+    // PRESENTER -> ROUTER
+    static func createModule() -> UIViewController
+    func presentListView(from viewProtocol: MovieLoginViewProtocol)
+}
+
 class MovieLoginRouter: MovieLoginRouterProtocol {
     static func createModule() -> UIViewController {
         let viewController = MovieLoginViewController()
@@ -22,5 +28,13 @@ class MovieLoginRouter: MovieLoginRouterProtocol {
         interactor.presenter = presenter
         
         return viewController
+    }
+    
+    func presentListView(from viewProtocol: MovieLoginViewProtocol) {
+        let routerModule: MovieListViewController = MovieListRouter.createMovieListModule() as! MovieListViewController
+        guard let controller = viewProtocol as? UIViewController else {
+            return
+        }
+        controller.navigationController?.pushViewController(routerModule, animated: true)
     }
 }
