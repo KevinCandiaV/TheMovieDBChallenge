@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MovieDetailInteractorInputProtocol {
     // PRESENTER -> INTERACTOR
     var presenter: MovieDetailInteractorOutputProtocol? { get set }
     
-    func callservice()
+    func saveMovie(data: Result?, image: UIImage?)
 }
 
 class MovieDetailInteractor: MovieDetailInteractorInputProtocol {
@@ -19,9 +20,10 @@ class MovieDetailInteractor: MovieDetailInteractorInputProtocol {
     // MARK: Properties
     weak var presenter: MovieDetailInteractorOutputProtocol?
     
-    func callservice() {
-        
+    func saveMovie(data: Result?, image: UIImage?) {
+        let service = CoredataRepository()
+        guard let image = image else { return }
+        service.saveMovieCoreData(withMovie: data!, withImage: image)
     }
-    
     
 }

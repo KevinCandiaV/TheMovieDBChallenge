@@ -10,7 +10,7 @@ import Foundation
 struct MovieListResponse: Decodable {
     let dates: Dates?
     let page: Int?
-    let results: [Result]?
+    var results: [Result]?
     let totalPages: Int?
     let totalResults: Int?
 }
@@ -37,4 +37,5 @@ struct Result: Decodable {
     let video: Bool?
     let vote_average: Double?
     let vote_count: Int?
+    
 }

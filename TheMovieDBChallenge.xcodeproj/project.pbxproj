@@ -23,6 +23,8 @@
 		0A420EA629B7F68100FB10A2 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA529B7F68100FB10A2 /* Extension+ViewController.swift */; };
 		0A420EA929B8433600FB10A2 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA729B8433600FB10A2 /* MovieListTableViewCell.swift */; };
 		0A420EAA29B8433600FB10A2 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A420EA829B8433600FB10A2 /* MovieListTableViewCell.xib */; };
+		0A911A0C29B9092600C0805B /* NetworkCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A911A0B29B9092600C0805B /* NetworkCheck.swift */; };
+		0A911A0E29B91B3200C0805B /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A911A0D29B91B3200C0805B /* CoreDataRepository.swift */; };
 		0AD2C04629B78D9F007FB753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C04529B78D9F007FB753 /* AppDelegate.swift */; };
 		0AD2C05029B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C04E29B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodeld */; };
 		0AD2C05229B78DA0007FB753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2C05129B78DA0007FB753 /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		0A420EA529B7F68100FB10A2 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		0A420EA729B8433600FB10A2 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		0A420EA829B8433600FB10A2 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
+		0A911A0B29B9092600C0805B /* NetworkCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheck.swift; sourceTree = "<group>"; };
+		0A911A0D29B91B3200C0805B /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
 		0AD2C04229B78D9F007FB753 /* TheMovieDBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD2C04529B78D9F007FB753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD2C04F29B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheMovieDBChallenge.xcdatamodel; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			children = (
 				0A420E9029B7B67C00FB10A2 /* LoginRepository.swift */,
 				0AF8C12429B8D7D5006D6685 /* MovieRepository.swift */,
+				0A911A0D29B91B3200C0805B /* CoreDataRepository.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			children = (
 				0AD2C04529B78D9F007FB753 /* AppDelegate.swift */,
 				0A420E9429B7B83900FB10A2 /* Constants.swift */,
+				0A911A0B29B9092600C0805B /* NetworkCheck.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -543,6 +549,8 @@
 				0A420E9F29B7E34A00FB10A2 /* MovieListEntity.swift in Sources */,
 				0AF8C12129B856D3006D6685 /* MovieDetailEntity.swift in Sources */,
 				0A420E9329B7B72400FB10A2 /* MovieLoginEntity.swift in Sources */,
+				0A911A0E29B91B3200C0805B /* CoreDataRepository.swift in Sources */,
+				0A911A0C29B9092600C0805B /* NetworkCheck.swift in Sources */,
 				0A420E9829B7E2D600FB10A2 /* MovieListView.swift in Sources */,
 				0AF8C11F29B856CC006D6685 /* MovieDetailPresenter.swift in Sources */,
 				0A420E9529B7B83900FB10A2 /* Constants.swift in Sources */,

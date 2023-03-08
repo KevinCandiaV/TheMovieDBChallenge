@@ -32,6 +32,9 @@ class MovieDetailViewController: UIViewController {
         presenter?.viewDidLoad()
     }
 
+    private func saveMovie(_ image: UIImage?) {
+        presenter?.saveMovie(image)
+    }
 }
 
 extension MovieDetailViewController: MovieDetailViewProtocol {
@@ -42,6 +45,8 @@ extension MovieDetailViewController: MovieDetailViewProtocol {
         voteAverageLabel.text = String(average)
         overviewLabel.text = overview
         posterImageView.af.setImage(withURL: getUrl(posterPath))
+        var image = posterImageView.image
+        saveMovie(image)
     }
     
 }

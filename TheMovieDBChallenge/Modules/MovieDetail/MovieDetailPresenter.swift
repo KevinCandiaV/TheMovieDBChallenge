@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MovieDetailPresenterProtocol {
     // VIEW -> PRESENTER
@@ -14,6 +15,7 @@ protocol MovieDetailPresenterProtocol {
     var router: MovieDetailRouterProtocol? { get set }
     
     func viewDidLoad()
+    func saveMovie(_ image: UIImage?)
 }
 
 protocol MovieDetailInteractorOutputProtocol: AnyObject {
@@ -36,6 +38,10 @@ class MovieDetailPresenter: MovieDetailPresenterProtocol {
     
     func viewDidLoad() {
         view?.setData(data:data)
+    }
+    
+    func saveMovie(_ image: UIImage?) {
+        interactor?.saveMovie(data: data, image: image)
     }
     
 }
