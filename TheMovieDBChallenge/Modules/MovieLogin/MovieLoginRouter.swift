@@ -35,6 +35,7 @@ class MovieLoginRouter: MovieLoginRouterProtocol {
         guard let controller = viewProtocol as? UIViewController else {
             return
         }
-        controller.navigationController?.pushViewController(routerModule, animated: true)
+        AppDelegate.shared.changeScreenforLogin()
+//        controller.navigationController?.pushViewController(routerModule, animated: true)
     }
 }

@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+protocol MovieListRouterProtocol {
+    // PRESENTER -> ROUTER
+    static func createMovieListModule() -> UIViewController
+}
+
 class MovieListRouter: MovieListRouterProtocol {
     static func createMovieListModule() -> UIViewController {
         let viewController = MovieListViewController()
