@@ -32,7 +32,7 @@ struct Result: Decodable {
     let overview: String?
     let popularity: Double?
     let poster_path: String?
-    let releaseDate: String?
+    let release_date: String?
     let title: String?
     let video: Bool?
     let vote_average: Double?

@@ -12,3 +12,8 @@ struct Constants {
     public static let movieLoginURL = "https: //api.themoviedb.org/3/login"
     public static let fetchMoviesURL = "https://api.themoviedb.org/3/movie/upcoming?api_key=\(api_Key)&language=en-US&page=1"
 }
+
+func getUrl(_ urlString: String) -> URL {
+    let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlString)")
+    return url ?? URL(string: "")!
+}

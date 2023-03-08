@@ -13,9 +13,10 @@ protocol MovieListPresenterProtocol {
     var interactor: MovieListInteractorInputProtocol? { get set }
     var router: MovieListRouterProtocol? { get set }
     
-    func viewDidLoad()
+//    func viewDidLoad()
     
     func getMovieList()
+    func presentDetailView(data: Result)
 }
 
 protocol MovieListInteractorOutputProtocol: AnyObject {
@@ -30,14 +31,17 @@ class MovieListPresenter: MovieListPresenterProtocol {
     var interactor: MovieListInteractorInputProtocol?
     var router: MovieListRouterProtocol?
     
-    func viewDidLoad() {
-        
-    }
+//    func viewDidLoad() {
+//
+//    }
     
     func getMovieList() {
         interactor?.fetchMovies()
     }
     
+    func presentDetailView(data: Result) {
+        router?.presentDetailView(from: self.view!, data: data)
+    }
 }
 
 extension MovieListPresenter: MovieListInteractorOutputProtocol {

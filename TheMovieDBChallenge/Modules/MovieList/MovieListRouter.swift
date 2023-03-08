@@ -11,6 +11,8 @@ import UIKit
 protocol MovieListRouterProtocol {
     // PRESENTER -> ROUTER
     static func createMovieListModule() -> UIViewController
+    
+    func presentDetailView(from viewProtocol: MovieListViewProtocol, data: Result)
 }
 
 class MovieListRouter: MovieListRouterProtocol {
@@ -28,5 +30,13 @@ class MovieListRouter: MovieListRouterProtocol {
         
         return viewController
         
+    }
+    
+    func presentDetailView(from viewProtocol: MovieListViewProtocol, data: Result) {
+        let routerModule: MovieDetailViewController = MovieDetailRouter.createMovieDetailModule(data: data) as! MovieDetailViewController
+        guard let controller = viewProtocol as? UIViewController else {
+            return
+        }
+        controller.navigationController?.pushViewController(routerModule, animated: true)
     }
 }

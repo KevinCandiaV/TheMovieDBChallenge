@@ -28,8 +28,14 @@ class MovieDetailPresenter: MovieDetailPresenterProtocol {
     var interactor: MovieDetailInteractorInputProtocol?
     var router: MovieDetailRouterProtocol?
     
+    var data: Result?
+    
+    init(data: Result) {
+        self.data = data
+    }
+    
     func viewDidLoad() {
-        
+        view?.setData(data:data)
     }
     
 }

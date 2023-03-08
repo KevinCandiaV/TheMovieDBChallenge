@@ -76,8 +76,9 @@ extension MovieListViewController: UITableViewDataSource {
         let data = elements?.results?[indexPath.row]
         cell.overviewLabel.text = data?.overview
         cell.titleMovieLabel.text = data?.title
-        cell.overviewLabel.text = data?.overview
-        
+        cell.releaseDateLabel.text = data?.release_date
+        cell.voteAverageLabel.text = String(format: "%.1f", data?.vote_average ?? 0.0)
+        cell.posterImageView.af.setImage(withURL: getUrl(data?.poster_path ?? ""))
         return cell
     }
     
@@ -86,6 +87,8 @@ extension MovieListViewController: UITableViewDataSource {
 extension MovieListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        guard let item = elements?.results?[indexPath.row] else { return }
+        presenter?.presentDetailView(data: item)
     }
     
 }
