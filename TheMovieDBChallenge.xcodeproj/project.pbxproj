@@ -12,7 +12,6 @@
 		0A420E8729B7973500FB10A2 /* MovieLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E8629B7973500FB10A2 /* MovieLoginInteractor.swift */; };
 		0A420E8929B7974B00FB10A2 /* MovieLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E8829B7974B00FB10A2 /* MovieLoginPresenter.swift */; };
 		0A420E8B29B7975700FB10A2 /* MovieLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E8A29B7975700FB10A2 /* MovieLoginRouter.swift */; };
-		0A420E8D29B7976400FB10A2 /* MovieLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E8C29B7976400FB10A2 /* MovieLoginProtocols.swift */; };
 		0A420E9129B7B67C00FB10A2 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E9029B7B67C00FB10A2 /* LoginRepository.swift */; };
 		0A420E9329B7B72400FB10A2 /* MovieLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E9229B7B72400FB10A2 /* MovieLoginEntity.swift */; };
 		0A420E9529B7B83900FB10A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E9429B7B83900FB10A2 /* Constants.swift */; };
@@ -21,7 +20,6 @@
 		0A420E9D29B7E33D00FB10A2 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E9C29B7E33D00FB10A2 /* MovieListPresenter.swift */; };
 		0A420E9F29B7E34A00FB10A2 /* MovieListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420E9E29B7E34A00FB10A2 /* MovieListEntity.swift */; };
 		0A420EA129B7E35400FB10A2 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA029B7E35400FB10A2 /* MovieListRouter.swift */; };
-		0A420EA329B7E36500FB10A2 /* MovieListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA229B7E36500FB10A2 /* MovieListProtocols.swift */; };
 		0A420EA629B7F68100FB10A2 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA529B7F68100FB10A2 /* Extension+ViewController.swift */; };
 		0A420EA929B8433600FB10A2 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A420EA729B8433600FB10A2 /* MovieListTableViewCell.swift */; };
 		0A420EAA29B8433600FB10A2 /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A420EA829B8433600FB10A2 /* MovieListTableViewCell.xib */; };
@@ -63,7 +61,6 @@
 		0A420E8629B7973500FB10A2 /* MovieLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoginInteractor.swift; sourceTree = "<group>"; };
 		0A420E8829B7974B00FB10A2 /* MovieLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoginPresenter.swift; sourceTree = "<group>"; };
 		0A420E8A29B7975700FB10A2 /* MovieLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoginRouter.swift; sourceTree = "<group>"; };
-		0A420E8C29B7976400FB10A2 /* MovieLoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoginProtocols.swift; sourceTree = "<group>"; };
 		0A420E9029B7B67C00FB10A2 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		0A420E9229B7B72400FB10A2 /* MovieLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoginEntity.swift; sourceTree = "<group>"; };
 		0A420E9429B7B83900FB10A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 		0A420E9C29B7E33D00FB10A2 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		0A420E9E29B7E34A00FB10A2 /* MovieListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListEntity.swift; sourceTree = "<group>"; };
 		0A420EA029B7E35400FB10A2 /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
-		0A420EA229B7E36500FB10A2 /* MovieListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListProtocols.swift; sourceTree = "<group>"; };
 		0A420EA529B7F68100FB10A2 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		0A420EA729B8433600FB10A2 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		0A420EA829B8433600FB10A2 /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
@@ -156,7 +152,6 @@
 				0A420E8829B7974B00FB10A2 /* MovieLoginPresenter.swift */,
 				0A420E9229B7B72400FB10A2 /* MovieLoginEntity.swift */,
 				0A420E8A29B7975700FB10A2 /* MovieLoginRouter.swift */,
-				0A420E8C29B7976400FB10A2 /* MovieLoginProtocols.swift */,
 			);
 			path = MovieLogin;
 			sourceTree = "<group>";
@@ -170,7 +165,6 @@
 				0A420E9C29B7E33D00FB10A2 /* MovieListPresenter.swift */,
 				0A420E9E29B7E34A00FB10A2 /* MovieListEntity.swift */,
 				0A420EA029B7E35400FB10A2 /* MovieListRouter.swift */,
-				0A420EA229B7E36500FB10A2 /* MovieListProtocols.swift */,
 			);
 			path = MovieList;
 			sourceTree = "<group>";
@@ -396,9 +390,7 @@
 				0A420E9129B7B67C00FB10A2 /* LoginRepository.swift in Sources */,
 				0AD2C05029B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodeld in Sources */,
 				0A420E9F29B7E34A00FB10A2 /* MovieListEntity.swift in Sources */,
-				0A420EA329B7E36500FB10A2 /* MovieListProtocols.swift in Sources */,
 				0AF8C12129B856D3006D6685 /* MovieDetailEntity.swift in Sources */,
-				0A420E8D29B7976400FB10A2 /* MovieLoginProtocols.swift in Sources */,
 				0A420E9329B7B72400FB10A2 /* MovieLoginEntity.swift in Sources */,
 				0A420E9829B7E2D600FB10A2 /* MovieListView.swift in Sources */,
 				0AF8C11F29B856CC006D6685 /* MovieDetailPresenter.swift in Sources */,
