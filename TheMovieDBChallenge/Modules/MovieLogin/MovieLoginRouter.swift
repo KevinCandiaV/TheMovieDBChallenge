@@ -31,11 +31,6 @@ class MovieLoginRouter: MovieLoginRouterProtocol {
     }
     
     func presentListView(from viewProtocol: MovieLoginViewProtocol) {
-        let routerModule: MovieListViewController = MovieListRouter.createMovieListModule() as! MovieListViewController
-        guard let controller = viewProtocol as? UIViewController else {
-            return
-        }
         AppDelegate.shared.changeScreenforLogin()
-//        controller.navigationController?.pushViewController(routerModule, animated: true)
     }
 }

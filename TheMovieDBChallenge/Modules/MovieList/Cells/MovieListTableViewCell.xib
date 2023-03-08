@@ -31,10 +31,10 @@
                                 <rect key="frame" x="114.66666666666667" y="26" width="245.33333333333331" height="148"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="56e-Qm-CbI">
-                                        <rect key="frame" x="0.0" y="0.0" width="238.33333333333334" height="32.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="245.33333333333334" height="32.333333333333336"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hrh-Xg-3wZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="32.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="32.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puss in Boots: The Last Wish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr3-Hj-oN1">
                                                         <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="17"/>
@@ -50,8 +50,8 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-CR-VuZ">
-                                                <rect key="frame" x="206.66666666666663" y="0.0" width="31.666666666666657" height="32.333333333333336"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-CR-VuZ">
+                                                <rect key="frame" x="213.66666666666663" y="0.0" width="31.666666666666657" height="32.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-n3-pr0">
                                                         <rect key="frame" x="0.0" y="0.0" width="31.666666666666668" height="32.333333333333336"/>
@@ -76,6 +76,10 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="56e-Qm-CbI" firstAttribute="leading" secondItem="TBI-wg-cZe" secondAttribute="leading" id="onf-Hj-zaJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="56e-Qm-CbI" secondAttribute="trailing" id="yYe-Br-ies"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

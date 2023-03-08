@@ -11,7 +11,6 @@ protocol MovieListInteractorInputProtocol {
     // PRESENTER -> INTERACTOR
     var presenter: MovieListInteractorOutputProtocol? { get set }
     func fetchMovies()
-    
 }
 
 class MovieListInteractor: MovieListInteractorInputProtocol {
@@ -20,6 +19,10 @@ class MovieListInteractor: MovieListInteractorInputProtocol {
     weak var presenter: MovieListInteractorOutputProtocol?
     
     func fetchMovies() {
-        
+        let service = MovieRepository()
+        service.fetchMovies { [weak self] listOfMovies in
+            guard let self = self else { return }
+            self.presenter?.callBackDidGetMovies(data: listOfMovies)
+        }
     }
 }

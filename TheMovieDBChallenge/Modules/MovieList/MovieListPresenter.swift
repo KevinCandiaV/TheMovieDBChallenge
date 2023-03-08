@@ -35,14 +35,14 @@ class MovieListPresenter: MovieListPresenterProtocol {
     }
     
     func getMovieList() {
-        
+        interactor?.fetchMovies()
     }
     
 }
 
 extension MovieListPresenter: MovieListInteractorOutputProtocol {
     func callBackDidGetMovies(data: MovieListResponse?) {
-        
+        view?.reloadMoviesTable(withData: data)
     }
     
     

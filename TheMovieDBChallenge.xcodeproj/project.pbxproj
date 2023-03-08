@@ -36,6 +36,7 @@
 		0AF8C11F29B856CC006D6685 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C11E29B856CC006D6685 /* MovieDetailPresenter.swift */; };
 		0AF8C12129B856D3006D6685 /* MovieDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C12029B856D3006D6685 /* MovieDetailEntity.swift */; };
 		0AF8C12329B856DC006D6685 /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C12229B856DC006D6685 /* MovieDetailRouter.swift */; };
+		0AF8C12529B8D7D5006D6685 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8C12429B8D7D5006D6685 /* MovieRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		0AF8C11E29B856CC006D6685 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		0AF8C12029B856D3006D6685 /* MovieDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailEntity.swift; sourceTree = "<group>"; };
 		0AF8C12229B856DC006D6685 /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
+		0AF8C12429B8D7D5006D6685 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				0A420E9029B7B67C00FB10A2 /* LoginRepository.swift */,
+				0AF8C12429B8D7D5006D6685 /* MovieRepository.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				0A420E9B29B7E32C00FB10A2 /* MovieListInteractor.swift in Sources */,
 				0A420E9D29B7E33D00FB10A2 /* MovieListPresenter.swift in Sources */,
 				0A420E8B29B7975700FB10A2 /* MovieLoginRouter.swift in Sources */,
+				0AF8C12529B8D7D5006D6685 /* MovieRepository.swift in Sources */,
 				0AD2C04629B78D9F007FB753 /* AppDelegate.swift in Sources */,
 				0AF8C11A29B856A0006D6685 /* MovieDetailViewController.swift in Sources */,
 				0A420E8929B7974B00FB10A2 /* MovieLoginPresenter.swift in Sources */,
