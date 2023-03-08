@@ -31,6 +31,8 @@ class MovieLoginViewController: UIViewController {
     
     private func setupUI() {
         loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
+        userTextField.keyboardType = .emailAddress
+        passwordTextField.isSecureTextEntry = true
     }
     
     @objc func loginButtonPressed(_ button: UIButton) {

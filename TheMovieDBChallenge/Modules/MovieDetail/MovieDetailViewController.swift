@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 protocol MovieDetailViewProtocol: AnyObject {
     // PRESENTER -> VIEW
