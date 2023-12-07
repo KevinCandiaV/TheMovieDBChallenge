@@ -61,7 +61,11 @@ extension ViewController: UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "celdaID", for: indexPath)
-            
+            if indexPath.row == 0 {
+                cell.backgroundColor = .systemPink
+            } else {
+                cell.backgroundColor = .yellow
+            }
             let (titulo, subtitulo, fecha) = datosLista[indexPath.row]
             cell.textLabel?.text = "\(titulo) - \(subtitulo) - Fecha: \(fecha)"
             return cell
