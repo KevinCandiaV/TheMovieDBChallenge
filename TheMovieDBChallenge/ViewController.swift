@@ -6,36 +6,43 @@
 //
 
 import UIKit
+struct Persona {
+    let userId: Int?
+    let id: Int?
+    let title: String?
+    let body: String?
+}
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var ejemploTableview: UITableView!
     
-    // Datos de ejemlo para la lista
-    let datosLista = [
-        ("Elemento 1", "Subtítulo 1", "2023-01-01"),
-        ("Elemento 2", "Subtítulo 2", "2023-02-15"),
-        ("Elemento 3", "Subtítulo 3", "2023-03-30")
-    ]
+    var listaPersona1 = Persona(userId: 1, id: 1, title: "sunt aut facere repellat", body: "Body 1")
+    var listaPersona2 = Persona(userId: 2, id: 2, title: "qui est esse", body: "Body 2")
     
+    var arrayPersona = [Persona]()
+            
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         setupTable()
         registerTable()
+        setupUI()
     }
     
     func setupUI() {
-        view.backgroundColor = .gray
+        arrayPersona.append(listaPersona1)
+        arrayPersona.append(listaPersona2)
     }
     
+    // MARK: - Configurar tabla con delegados
     func setupTable() {
         ejemploTableview.delegate = self
         ejemploTableview.dataSource = self
     }
     
     func registerTable() {
-        ejemploTableview.register(UITableViewCell.self, forCellReuseIdentifier: "celdaID")
+        let nib = UINib(nibName: "DemoTableViewCell", bundle: nil)
+        ejemploTableview.register(nib, forCellReuseIdentifier: "celda")
     }
     
 }
@@ -48,24 +55,16 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datosLista.count
+        return arrayPersona.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == datosLista.count - 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "celdaID", for: indexPath)
-            
-            let (titulo, subtitulo, fecha) = datosLista[indexPath.row]
-            cell.textLabel?.text = "\(titulo) - \(subtitulo) - Fecha: \(fecha)"
-            cell.backgroundColor = .blue
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "celdaID", for: indexPath)
-            
-            let (titulo, subtitulo, fecha) = datosLista[indexPath.row]
-            cell.textLabel?.text = "\(titulo) - \(subtitulo) - Fecha: \(fecha)"
-            return cell
-        }
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! DemoTableViewCell
+//        celda.backgorundView.backgroundColor = .gray
+        celda.nombreLable.text = arrayPersona[indexPath.row].body
+        celda.descLabel.text = arrayPersona[indexPath.row].title
+        celda.celdaImageview.image = UIImage(named: "profileImage")
+        return celda
     }
     
 }

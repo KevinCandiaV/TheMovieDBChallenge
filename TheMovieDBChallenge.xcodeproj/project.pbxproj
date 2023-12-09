@@ -17,6 +17,8 @@
 		0AD2C06029B78DA0007FB753 /* TheMovieDBChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C05F29B78DA0007FB753 /* TheMovieDBChallengeTests.swift */; };
 		0AD2C06A29B78DA0007FB753 /* TheMovieDBChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C06929B78DA0007FB753 /* TheMovieDBChallengeUITests.swift */; };
 		0AD2C06C29B78DA0007FB753 /* TheMovieDBChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C06B29B78DA0007FB753 /* TheMovieDBChallengeUITestsLaunchTests.swift */; };
+		DC21E14B2B2406C6004B8DB6 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21E1492B2406C6004B8DB6 /* DemoTableViewCell.swift */; };
+		DC21E14C2B2406C6004B8DB6 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC21E14A2B2406C6004B8DB6 /* DemoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0AD2C06529B78DA0007FB753 /* TheMovieDBChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieDBChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD2C06929B78DA0007FB753 /* TheMovieDBChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBChallengeUITests.swift; sourceTree = "<group>"; };
 		0AD2C06B29B78DA0007FB753 /* TheMovieDBChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC21E1492B2406C6004B8DB6 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		DC21E14A2B2406C6004B8DB6 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		0AD2C04429B78D9F007FB753 /* TheMovieDBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				DC21E1462B240660004B8DB6 /* Celda */,
 				0AD2C04529B78D9F007FB753 /* AppDelegate.swift */,
 				0AD2C04729B78D9F007FB753 /* SceneDelegate.swift */,
 				0AD2C04929B78D9F007FB753 /* ViewController.swift */,
@@ -128,6 +133,15 @@
 				0AD2C06B29B78DA0007FB753 /* TheMovieDBChallengeUITestsLaunchTests.swift */,
 			);
 			path = TheMovieDBChallengeUITests;
+			sourceTree = "<group>";
+		};
+		DC21E1462B240660004B8DB6 /* Celda */ = {
+			isa = PBXGroup;
+			children = (
+				DC21E1492B2406C6004B8DB6 /* DemoTableViewCell.swift */,
+				DC21E14A2B2406C6004B8DB6 /* DemoTableViewCell.xib */,
+			);
+			path = Celda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,7 @@
 			files = (
 				0AD2C05529B78DA0007FB753 /* LaunchScreen.storyboard in Resources */,
 				0AD2C05229B78DA0007FB753 /* Assets.xcassets in Resources */,
+				DC21E14C2B2406C6004B8DB6 /* DemoTableViewCell.xib in Resources */,
 				0AD2C04D29B78D9F007FB753 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +279,7 @@
 				0AD2C05029B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodeld in Sources */,
 				0AD2C04A29B78D9F007FB753 /* ViewController.swift in Sources */,
 				0AD2C04629B78D9F007FB753 /* AppDelegate.swift in Sources */,
+				DC21E14B2B2406C6004B8DB6 /* DemoTableViewCell.swift in Sources */,
 				0AD2C04829B78D9F007FB753 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
