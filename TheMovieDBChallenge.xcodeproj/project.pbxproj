@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ACF09C42B2413B100839775 /* NuevaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF09C22B2413B100839775 /* NuevaTableViewCell.swift */; };
+		0ACF09C52B2413B100839775 /* NuevaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF09C32B2413B100839775 /* NuevaTableViewCell.xib */; };
 		0AD2C04629B78D9F007FB753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C04529B78D9F007FB753 /* AppDelegate.swift */; };
 		0AD2C04829B78D9F007FB753 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C04729B78D9F007FB753 /* SceneDelegate.swift */; };
 		0AD2C04A29B78D9F007FB753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C04929B78D9F007FB753 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ACF09C22B2413B100839775 /* NuevaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTableViewCell.swift; sourceTree = "<group>"; };
+		0ACF09C32B2413B100839775 /* NuevaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NuevaTableViewCell.xib; sourceTree = "<group>"; };
 		0AD2C04229B78D9F007FB753 /* TheMovieDBChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDBChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD2C04529B78D9F007FB753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD2C04729B78D9F007FB753 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ACF09C12B24136C00839775 /* CeldaNueva */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF09C22B2413B100839775 /* NuevaTableViewCell.swift */,
+				0ACF09C32B2413B100839775 /* NuevaTableViewCell.xib */,
+			);
+			path = CeldaNueva;
+			sourceTree = "<group>";
+		};
 		0AD2C03929B78D9F007FB753 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		0AD2C04429B78D9F007FB753 /* TheMovieDBChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0ACF09C12B24136C00839775 /* CeldaNueva */,
 				0AD2C04529B78D9F007FB753 /* AppDelegate.swift */,
 				0AD2C04729B78D9F007FB753 /* SceneDelegate.swift */,
 				0AD2C04929B78D9F007FB753 /* ViewController.swift */,
@@ -235,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD2C05529B78DA0007FB753 /* LaunchScreen.storyboard in Resources */,
+				0ACF09C52B2413B100839775 /* NuevaTableViewCell.xib in Resources */,
 				0AD2C05229B78DA0007FB753 /* Assets.xcassets in Resources */,
 				0AD2C04D29B78D9F007FB753 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACF09C42B2413B100839775 /* NuevaTableViewCell.swift in Sources */,
 				0AD2C05029B78D9F007FB753 /* TheMovieDBChallenge.xcdatamodeld in Sources */,
 				0AD2C04A29B78D9F007FB753 /* ViewController.swift in Sources */,
 				0AD2C04629B78D9F007FB753 /* AppDelegate.swift in Sources */,
